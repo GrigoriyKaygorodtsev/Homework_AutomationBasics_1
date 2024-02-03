@@ -10,7 +10,7 @@ public class CashbackHackServiceTest {
         int amount = 1_000;
         int actual = service.remain(amount);
         int expected = 0;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
     @org.testng.annotations.Test
     public void testRemainWithCashback () {
@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
         int amount = 900;
         int actual = service.remain(amount);
         int expected = 100;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
     @org.testng.annotations.Test
     public void testRemainWithCashback1 () {
@@ -26,7 +26,7 @@ public class CashbackHackServiceTest {
         int amount = 1_001;
         int actual = service.remain(amount);
         int expected = 999;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
     @org.testng.annotations.Test
     public void testRemainWithCashback2 () {
@@ -34,7 +34,7 @@ public class CashbackHackServiceTest {
         int amount = 0;
         int actual = service.remain(amount);
         int expected = 1_000;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
     @org.testng.annotations.Test
     public void testRemainWithCashback3 () {
@@ -42,7 +42,7 @@ public class CashbackHackServiceTest {
         int amount = 1;
         int actual = service.remain(amount);
         int expected = 999;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
 }
